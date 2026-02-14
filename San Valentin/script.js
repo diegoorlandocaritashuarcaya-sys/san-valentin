@@ -1,7 +1,7 @@
 // BOTON MENSAJE
 function mostrarMensaje(){
 document.getElementById("mensajeSecreto").innerHTML =
-"Aunque el tiempo pase, siempre te desearé lo mejor ❤️";
+"Error 404: olvidarte no encontrado";
 }
 
 // CONTADOR DE TIEMPO (cambia fecha si quieres)
@@ -14,7 +14,7 @@ let diferencia = ahora - fechaInicio;
 let dias = Math.floor(diferencia / (1000*60*60*24));
 
 document.getElementById("contador").innerHTML =
-"Han pasado " + dias + " días desde que nos conocimos ❤️";
+"Han pasado " + dias + " días desde que nos conocimos, aun no olvido ese día ❤️";
 }
 
 setInterval(actualizarContador,1000);
