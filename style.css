@@ -56,5 +56,4 @@ animation:subir 4s linear infinite;
 @keyframes subir{
 0%{transform:translateY(0);}
 100%{transform:translateY(-800px);}
-
 }
