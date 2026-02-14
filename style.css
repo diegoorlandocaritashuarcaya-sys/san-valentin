@@ -3,7 +3,7 @@ background: linear-gradient(to right,#ffdde1,#ee9ca7);
 font-family: Arial;
 text-align: center;
 margin-top: 80px;
-overflow:hidden;
+overflow-y:auto;
 }
 
 .container{
@@ -56,4 +56,5 @@ animation:subir 4s linear infinite;
 @keyframes subir{
 0%{transform:translateY(0);}
 100%{transform:translateY(-800px);}
+
 }
