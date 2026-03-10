@@ -1,20 +1,31 @@
+// BOTON MENSAJE
 function mostrarMensaje(){
-
 document.getElementById("mensajeSecreto").innerHTML =
-"Mamá, gracias por tu amor infinito, por tus consejos y por siempre estar para mí. Te quiero mucho 💜";
-
+"Error 404: olvidarte no encontrado";
 }
 
+// CONTADOR DE TIEMPO (cambia fecha si quieres)
+let fechaInicio = new Date("2024-12-30");
+
+function actualizarContador(){
+let ahora = new Date();
+let diferencia = ahora - fechaInicio;
+
+let dias = Math.floor(diferencia / (1000*60*60*24));
+
+document.getElementById("contador").innerHTML =
+"Han pasado " + dias + " días desde que nos conocimos, aun no olvido ese día ❤️";
+}
+
+setInterval(actualizarContador,1000);
+
+// LLUVIA DE CORAZONES
 function crearCorazon(){
-
 let corazon = document.createElement("div");
-
-corazon.innerHTML="💜";
-
+corazon.innerHTML="❤️";
 corazon.classList.add("corazon");
 
 corazon.style.left=Math.random()*100+"vw";
-
 corazon.style.fontSize=Math.random()*20+20+"px";
 
 document.body.appendChild(corazon);
@@ -22,7 +33,6 @@ document.body.appendChild(corazon);
 setTimeout(()=>{
 corazon.remove();
 },4000);
-
 }
 
 setInterval(crearCorazon,300);
